@@ -1,0 +1,516 @@
+               *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+        --dark-blue: #0A1D3C;
+        --light-gray: #E5E5E5;
+        --white: #FFF;
+        --light-peach: #F9E3BC;
+        --dark-gray: #3E3F43;
+        --light-black: #1D1D1D;
+        }
+        .section{
+            min-height: 100vh;
+            width: 100%;
+            
+        }
+        nav{
+            width: 80%;
+            height: 13vh;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            
+        }
+        header{
+            width: 80%;
+            height: calc(100vh - 13vh);
+            
+            display: flex;
+            align-items: center;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+        .navlinks{
+            display: flex;
+        }
+
+.header-image{
+    width: 23rem;
+
+}
+.logo{
+    font-size: 3.3rem;
+    color: var(--dark-blue);
+    
+
+}
+.navlinks li{
+    list-style: none;
+
+}
+.navlinks li a{
+    text-decoration: none;
+    margin-left: 2.5rem;
+    color: var(--dark-gray);
+    font-size: 1rem;
+    letter-spacing: .3rem;
+    position: relative;
+}
+.header-heading{
+    font-size: 5rem;
+    position: relative;
+
+}
+.header-heading::before{
+    content: "new";
+    position: absolute;
+    top:-60px;
+    color: var(--dark-blue);
+    font-size: 5rem;
+}
+.product-name{
+    font-size: 1.7rem;
+
+}
+.header-pricing{
+    font-size: 1.5rem;
+    margin: 1rem;
+
+}
+.btn-container{
+    display: flex;
+    margin-top: 2rem;
+
+
+}
+.primary-btn, .secondary-btn{
+    font-size: 1rem;
+    border: none;
+    padding: 1rem 1.7rem;
+    transition: transform .5 ease-in-out;
+    
+
+
+}
+.secondary-btn{
+    background: var(--dark-blue);
+    color: var(--white);
+    transform: scale(1.1);
+    transition: transform .5 ease-in-out;
+
+}
+.primary-btn:hover, .section-two-btn:hover, .section-four-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.secondary-btn:hover{
+    transform: scale(1.1);
+
+
+}
+.navlinks li a::after, .navlinks li .active::after{
+    content: "";
+    background: var(--dark-gray);
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+    transform-origin: right;
+
+
+
+}
+.navlinks li a:hover::after, .navlinks li .active::after{
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+.line{
+    background: var(--dark-gray);
+    width: 2.5rem;
+    height: .2rem;
+    margin: .38rem;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+
+
+}
+.section-two{
+    display: flex;
+    align-items: center;
+
+}
+ .section-two-container{
+    background: var(--light-peach);
+    width: 100%;
+    height: 80vh;
+    transform: skew(-5deg);
+
+
+}
+
+
+
+/* .image-container{
+    width: 28rem;
+    
+
+} */
+/* .section-two-image{
+    height: 43%;
+    
+
+} */
+/* .section-two-inner-container{
+    transform: skewY(5deg);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    
+    width: 80%;
+ 
+
+ }  */
+.section-two-container, .section-two-inner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .section-two-image{
+    display: flex;
+    width: 70%;
+    
+    
+}
+
+.section-two-heading{
+    color: var(--dark-blue);
+    font-size: 3rem;
+    margin-left: 15px;
+
+}
+.section-two-para{
+    margin-top: 5px;
+    
+    font-size: .7rem;
+    color: var(--dark-gray);
+    line-height: 1rem;
+    width: 50%;
+    overflow: hidden;
+    margin-left: 26px;
+
+}
+.setion-two-pricing{
+    font-size: 1.6rem;
+    color: var(--dark-gray);
+    margin: 1rem;
+    margin-left: 26px;
+    transform: translateX(-2);
+    transition: transform .5s ease-in-out;
+
+}
+.section-two-btn{
+    padding: .9rem 1.7rem;
+    border: .1rem solid var(--dark-gray);
+    font-size: 1rem;
+    margin-left: 26px;
+    transition: transform .5s ease-in-out;
+
+}  
+.section-deading{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.card-container{
+    
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    text-align: center;
+    gap: 1rem;
+    width: fit-content;
+    margin-left: 1rem;
+    margin-right: 2rem;
+   
+}
+.card-image{
+    width: 20rem;
+
+}
+.card{
+    background: var(--light-gray);
+    padding: 1rem;
+
+
+}
+
+.card-pricing{
+    font-size: 1.2rem;
+    margin-top: .2rem;
+    margin-bottom: 1.2rem;
+
+
+}
+
+.section-four{
+    display: flex;
+    align-items: center;
+}
+
+.section-four-container{
+    
+    width: 100%;
+    height: 70vh;
+    background-image: url("img/witch.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.section-four-offer{
+    font-size: 4rem;
+    color: var(--light-peach);
+    text-transform: uppercase;
+}
+.section-four-heading{
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+
+}
+.section-four-btn{
+    font-size: 1.1rem;
+    padding: 1rem 1.7rem;
+    background: var(--light-peach);
+    border: none;
+    transition: transform .5s ease-in-out;
+}
+
+.section-four-container::before{
+    content: "";
+    background: rgba(0,0,0,0.55);
+    position: absolute;
+    inset: 0;
+
+}
+.section-four-container .content{
+    z-index: 5;
+
+
+}
+
+
+.grid-card-container{
+    
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:1.2rem;
+    grid-auto-rows: 15rem;
+
+}
+.grid-card{
+    background: var(--light-gray);
+
+
+}
+.grid-card:nth-child(1){
+    g
+    
+}
+.grid-card:nth-child(3){
+    grid-row: 1/3;
+}
+
+.grid-card:nth-child(4){
+    
+}
+.grid-card::before{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.554) ;
+    inset: 0;
+    transform: scaleX(0);
+
+}
+.grid-card::after{
+    content: attr(collection);
+     position: absolute;
+    text-transform: uppercase;
+    background: var(--light-gray);
+    
+    transform: translate((-50%,-50%));
+    padding: 1rem 1.7rem; 
+
+    font-size: 1rem;
+    overflow: hidden;
+    opacity: 0;
+
+
+}
+footer{
+    background: var(--light-black);
+    height: 20vh;
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gooter-txt{
+    color: white;
+    font-size: 1.5rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 500px){
+    .header-image{
+        display: none;
+
+    }
+    .navlinks{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        background: var(--light-peach);
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        right: 100%;
+        z-index: 2;
+        gap: 2rem;
+         transition:  1s ease-in-out;
+
+    }
+    .navlinks-active{
+        right: 0;
+
+
+    }
+
+    .navlinks li a{
+        font-size: 1.4rem;
+        margin-left: 0;
+
+    }
+    .hamburger{
+        display: block;
+        z-index: 5;
+    }
+    .section .logo{
+        z-index: 5;
+
+    }
+    .header-heading{
+        font-size: 4rem;
+    }
+    header{
+        
+        justify-content: flex-start;
+    }
+
+
+    .section-two-image{
+        display: none;
+
+    }
+    .section-two-heading{
+        font-size: 2.9rem;
+
+
+    }
+    .section-two-para{
+        font-size: .93rem;
+        max-width: 100%;
+    }
+    .setion-two-pricing{
+        font-size: 1.4rem;
+
+    }
+    .section-two-btn{
+        font-size: 1rem;
+        padding: .7rem 1rem;
+    }
+    .section-two-container{
+        height: 60vh;
+
+    }
+    .section-two-inner-container{
+        background: red;
+        width: 90%;
+
+    }
+    .card-image{
+        width: 17rem;
+        
+    }
+    .section-four-heading{
+        font-size: 2.8rem;
+    }
+    .section-four-offer{
+        font-size: 3.3rem;
+    }
+    .section-four-btn{
+        font-size: 1rem;
+
+    }
+
+
+
+
+
+
+
+
+
+}
