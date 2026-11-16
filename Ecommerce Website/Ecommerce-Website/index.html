@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <style>
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            background: #E3E6F3;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.33);
+
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar li{
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+        #navbar li a{
+            text-decoration:none ;
+            font-size: 16px;
+            font-weight: 900;
+            color: #1a1a1a;
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.1);
+        }
+        #navbar li a:hover,
+        #navbar li a.active{
+            color: #088178;
+         
+            transform: translate(5);
+            transition: all .5s ease-in-out;
+        }
+        
+        #navbar li a.active::after,
+        #navbar li a:hover::after{
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="./image.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
+               
+
+
+
+
+            </ul>
+        </div>
+
+    </section>
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>save more with coupons  & up to 70% off!</p>
+        <button>Shop now </button>
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="./phone.jpg" alt="">
+            <h6>Free Shippinng</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./people-hug-clock.jpg" alt="">
+            <h6>Free Shippinng</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./photo_2026-11-07_10-26-51.jpg" alt="">
+            <h6>Free Shippinng</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./photo_2026-11-07_10-27-16.jpg" alt="">
+            <h6>Free Shippinng</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./photo_2026-11-07_10-27-34.jpg" alt="">
+            <h6>Free Shippinng</h6>
+        </div>
+        <!-- <div class="fe-box">
+            <img src="./photo_2026-11-07_10-27-51.jpg" alt="">
+            <h6>Free Shippinng</h6>
+        </div> -->
+        
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Featured products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6056150674.2307/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.926069605.1825/ssrco,classic_tee,flatlay_01,2f4cb5:1dee1fd9b6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6182068556.8545/ssrco,boxy_tee,flatlay,ffffff:affd82b53f,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.971339694.8011/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.223922770.3178/ssrco,essential_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.u8.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6013890626.2023/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6221129756.5251/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.5248433338.4893/ssrco,essential_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Service</h4>
+        <h2>Up to <span>70% Off </span>-ALl tishirt & accessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+
+
+
+
+<!-- t-shirt -->
+
+
+
+
+
+
+
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.3219310847.5482/ssrco,oversize_tee,flatlay,000000:44f0b734a5,front,product_square,x600.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6030891259.7276/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6243261962.8906/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6030891259.7276/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.5930600845.5203/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6031947612.7300/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6221129756.5251/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://ih1.redbubble.net/image.6031947612.7300/ssrco,classic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" ><i class="fa-solid fa-cart-shopping card"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Cray deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Cray deals</h4>
+            <h2>Spring /summer</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Collection</button>
+        </div>
+
+    </section>
+
+
+    
+    <script src="src.js"></script>
+
+
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>Spring /summer</h2>
+            <h3>Winter collection -50% OFF</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>Spring /summer</h2>
+            <h3>Winter collection -50% OFF</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>Spring /summer</h2>
+            <h3>Winter collection -50% OFF</h3>
+        </div>
+    </section>
+
+
+    <section id="newsletter" class="section-p1  section-m1">
+        <div class="newtext">
+            <h4>Sing up For Newsletters</h4>
+            <p>Get Email updates about our latest shop and <span>special offers.</span></p>
+
+        </div>
+        <div class="form">
+            <input type="email" placeholder="you email address">
+            <button>Sing up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="cava.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 563 Wellington Toad, Street 32, San Francisco/</p>
+            <p><strong>Phone:</strong> +01 222222 4342/(+91) 01 4353 2323</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>Account</h4>
+            <a href="#">Sing In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From app store or google store</p>
+            <div class="row">
+                <img src="app.jpg" alt="">
+                <img src="google.jpg" alt="">
+            </div>
+            <p>Secured pyment Gateways</p>
+            <img src="vais.jpg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>@ 2021 , tech2 etc - HTML CSS Ecommeerce Template</p>
+        </div>
+
+    </footer>
+</body>
+</html>
